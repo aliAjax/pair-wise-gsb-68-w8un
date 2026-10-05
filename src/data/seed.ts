@@ -20,8 +20,10 @@ export const seedClaims: Claim[] = [
       },
       {
         id: 'F-3', text: '纯储能方案足以覆盖消防和一级负荷供电。', conclusion: '证据不足', confidence: 31, unresolved: ['缺少负荷计算书', '缺少消防验收文件'],
-        sources: [{ id: 'S-4', title: '设备厂商技术白皮书', url: 'https://vendor.example/white-paper', publisher: '设备厂商', publishedAt: '2026-05-12', capturedAt: '2026-09-29T11:10:00', kind: '二次来源', chainOfCustody: '厂商官网PDF留存', contentHash: 'sha256:6a8d22...41ee', version: 1 }],
-        counterSources: [], annotations: []
+        sources: [
+          { id: 'S-4', title: '设备厂商技术白皮书', url: 'https://vendor.example/white-paper', publisher: '设备厂商', publishedAt: '2026-05-12', capturedAt: '2026-09-29T11:10:00', kind: '二次来源', chainOfCustody: '厂商官网PDF留存', contentHash: 'sha256:6a8d22...41ee', version: 1 },
+          { id: 'S-6', title: '储能电站消防设计审查公示（旧剪报）', url: 'https://example.gov.cn/fire/notice-77', publisher: '市住建委', publishedAt: '2026-04-02', capturedAt: '2026-09-29T11:40:00', kind: '原始证据', chainOfCustody: '旧网页剪报，迁入系统时未带内容哈希，先待核', contentHash: '', version: 1 }
+        ], counterSources: [], annotations: []
       }
     ]
   },
